@@ -23,10 +23,6 @@ class ApplicationPolicy
     true
   end
 
-  def resultado?
-    true
-  end
-
   def show?
     scope.where(id: record.id).exists?
   end
